@@ -1,0 +1,7 @@
+langchain_community==0.0.25
+langchain==0.1.10
+fastapi==0.109.2
+redis
+qdrant_client==1.7.1
+uvicorn==0.23.2
+langchain_openai==0.0.5

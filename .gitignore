@@ -1,0 +1,20 @@
+# Local secrets and developer-specific configuration
+.env
+.env.*
+!.env.example
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local Redis binaries and persisted conversation history
+redis/
+dump.rdb
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Legacy notebooks have not been reviewed for credentials.
+*.ipynb
