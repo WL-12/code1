@@ -10,10 +10,10 @@ import os
 from Mytools import *  
 
 os.environ["OPENAI_API_BASE"] = os.getenv(
-    "DASHSCOPE_API_BASE", "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    "", ""
 )
-if os.getenv("DASHSCOPE_API_KEY"):
-    os.environ["OPENAI_API_KEY"] = os.environ["DASHSCOPE_API_KEY"]
+if os.getenv(""):
+    os.environ[""] = os.environ[""]
 
 app = FastAPI()
 
