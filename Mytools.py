@@ -11,10 +11,10 @@ from qdrant_client import QdrantClient
 
 
 os.environ["OPENAI_API_BASE"] = os.getenv(
-    "DASHSCOPE_API_BASE", "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    "DASHSCOPE_API_BASE", ""
 )
-if os.getenv("DASHSCOPE_API_KEY"):
-    os.environ["OPENAI_API_KEY"] = os.environ["DASHSCOPE_API_KEY"]
+if os.getenv(""):
+    os.environ[""] = os.environ[""]
 
 
 @tool
@@ -26,8 +26,8 @@ def test():
 @tool
 def searchdx(query: str):
     """仅在需要实时信息或不了解某个概念时使用。"""
-    if not os.getenv("SERPAPI_API_KEY"):
-        return "尚未配置 SERPAPI_API_KEY，无法进行实时搜索。"
+    if not os.getenv(""):
+        return ""
     return SerpAPIWrapper().run(query)
 
 
